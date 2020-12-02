@@ -4,7 +4,8 @@ import sys
 # Needs argumet if puzzle '1' or '2' should be solved
 puzzle = int(sys.argv[1])
 
-# Good luck deciphering this code
+# x equals one line and is structured like this:
+# x = [[min, max], letter, password]
 print(len([
     x[2]
     for x in (
