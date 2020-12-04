@@ -20,5 +20,5 @@ print(sum(
         for split in line.split()
         for pattern in patterns
         if re.match(pattern, split)
-    ) == 7
+        ) == 7
     ))

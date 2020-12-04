@@ -26,10 +26,8 @@ for line in lines:
                     pattern_bool[i] = True
                 if i == 3:
                     if value.endswith("cm") and 150 <= int(value.split("cm")[0])  <= 193:
-                        print(value)
                         pattern_bool[i] = True
                     if value.endswith("in") and 59 <= int(value.split("in")[0]) <= 76:
-                        print(value)
                         pattern_bool[i] = True
                 if i == 4 and re.match("^#[0-9a-f]{6}", value) and len(value) == 7:
                     pattern_bool[i] = True

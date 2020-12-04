@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-patterns = ["byr:", "iyr:", "eyr:", "hgt:", "hcl:", "ecl:", "pid:"]
+pattern = ["byr:", "iyr:", "eyr:", "hgt:", "hcl:", "ecl:", "pid:"]
 pattern_bool = [False, False, False, False, False, False, False]
 count = 0
 
