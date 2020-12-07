@@ -16,9 +16,7 @@ print(sum(
     for passport in open('input').read().split("\n\n")
     if sum(
         1
-        for line in passport.splitlines()
-        for split in line.split()
-        for pattern in patterns
-        if re.match(pattern, split)
+        for split in passport.split()
+        if any(re.match(pattern, split) for pattern in patterns)
         ) == 7
     ))

@@ -16,6 +16,6 @@ for line in lines:
     for i, pat in enumerate(pattern):
         if pat in line:
             pattern_bool[i] = True
-if(all(pattern_bool)):
+if all(pattern_bool):
     count += 1
 print(count)
